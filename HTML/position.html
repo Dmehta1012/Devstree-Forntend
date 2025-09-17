@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .relative{
+            height: 300px;
+            margin: 30px;
+            border: 3px solid cadetblue;
+            background-color: lightyellow;
+            position: relative;
+            padding: 20px;
+        }
+        .relative p{
+            width: 600px;
+        }
+        .fixed{
+            top: 320px;
+            right: 430px;
+            width: 300px;   
+            border: 3px solid lightsteelblue;
+            background-color: rgb(244, 194, 176);
+            position: fixed;
+            padding: 20px;
+        }
+        .absolute{
+            top:20px;
+            padding: 20px;
+            right:20px;
+            width: 200px;
+            position: absolute;
+            border: 3px solid rgb(175, 135, 250);
+            background-color: lightcyan;
+        }
+        .absolute p{
+            width: 150px;
+        }
+        .sticky{
+            margin: 40px;
+            background-color: lightgreen;
+            height: 200px;
+            position:sticky;
+            border: 3px solid black;
+            top:0;
+            overflow: scroll;
+        }
+        .p{
+            border: 3px solid black;
+            width: 400px;
+            margin: 40px;
+        }
+        .container-grid{
+            position:relative ;
+        }
+        img{
+        height: 500px;
+        width: 500px;
+        opacity: 0.8;
+        }
+        .text{
+            position:absolute;
+            top:8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sticky">
+        <h1>sticky</h1>
+        <p>Try to scroll this page to understand how sticky works.<br>
+
+        Here, when the sticky element reach the top of the page (top: 0), it sticks to this position!<br>
+
+        I have position sticky!<br>
+        Scroll back up to remove the stickyness!<br>
+
+        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.<br>
+
+        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.<br>
+
+        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.<br></p>
+    </div>
+    <div class="relative">
+        <h1>Relative</h1>
+        <p>An element with position: relative; is positioned relative to its normal position:</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum neque omnis, nesciunt natus optio cumque iusto, vero explicabo quos ipsam, accusantium voluptas culpa eveniet molestias incidunt laudantium ab voluptatem soluta aspernatur quaerat reiciendis autem alias sint. Unde nobis obcaecati eius iste quia deleniti nesciunt laboriosam modi facere temporibus ea soluta quam libero laborum iure quibusdam itaque aperiam voluptate debitis minus, doloremque nihil similique. Voluptatum sed quam minus recusandae incidunt ullam harum, at itaque sapiente cumque laboriosam eveniet ex iure expedita quo, dolor provident atque deserunt ratione eum a officiis. Possimus a asperiores expedita quis, rerum modi dicta suscipit aliquam corrupti.</p>
+        <div class="absolute">
+            <h1>Absolute</h1>
+            <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (with position other than static).
+            </p>
+        </div>
+    </div>
+    <div class="fixed">
+        <h1>Fixed</h1>
+        <p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used set the final location of the element.</p>
+        
+    </div>
+    <div class="p">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi sint iusto aliquam quibusdam? Est ipsum quibusdam minima molestiae vel sunt alias. Molestiae quasi fuga quis? Harum repellat sunt dolor, quis earum facilis, consequatur, laborum nesciunt labore at sapiente quae deserunt natus alias velit eius ipsum consectetur? Ducimus ipsum laboriosam asperiores ea aperiam temporibus, ut deleniti! Minima ratione fuga rerum iure, in doloremque rem beatae repudiandae dignissimos incidunt quo qui mollitia odio nesciunt corporis voluptates iusto nihil officia atque libero voluptatibus maiores! Unde commodi praesentium quaerat omnis ipsam molestiae vel? Alias sapiente, unde qui ipsa debitis autem dolorem repudiandae ipsam dignissimos facere magni. Minus exercitationem quaerat quisquam explicabo a dolore ex ut? Dolorem unde, omnis quo incidunt deserunt nisi rem dignissimos expedita molestiae voluptas autem optio nemo itaque ab asperiores laboriosam fugiat odit iusto illo! Accusantium sed at iste impedit repellat blanditiis voluptatibus illum sapiente eligendi tempora, enim saepe beatae fuga labore cum obcaecati quod. Error nam mollitia quaerat natus aliquam expedita autem, qui necessitatibus maiores temporibus sint commodi adipisci ducimus nisi reprehenderit dolores quos? Eveniet, et expedita. Aperiam, itaque quidem praesentium ullam error voluptatibus deserunt voluptatem explicabo cumque cupiditate. Minus quas quidem optio modi distinctio debitis dolore quia, odio magni?
+        </p>
+    </div>
+    <div class="container-grid">
+        <img src="photos/IMG-20250429-WA0057 (1).jpg" alt="" width=100% height=100%>
+        <div class="text">
+        <h1>Devarsh Mehta </h1>
+        </div>
+    </div>
+</body>
+</html>

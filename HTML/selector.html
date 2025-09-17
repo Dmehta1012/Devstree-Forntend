@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    
+    <style>
+        /* all contents */
+        #sel{
+            text-align:    center;
+            margin-top: 20px;
+            margin-left: 650px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            font-weight: bolder;
+            border: 2px solid black;
+            width: 200px;
+            border-radius: 20px;
+            background-color: rgba(0,0,0,0.3);
+        }
+        .container-grid{
+            background-color: rgb(85, 132, 132);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            width: 600px;
+            margin:50px;
+            margin-left:450px;
+        }
+        #id{
+        background-color: rgb(194, 248, 248);
+        border: 2px solid black;
+        border-radius: 50%;
+        width: 115px;
+        height: 100px;
+        margin: 20px;
+        }
+        /* Elements Selector */
+        h3{
+        text-align: center;
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Class selector */
+        .cls{
+            padding-top:10px ;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-variant: small-caps;
+            font-weight: bolder;
+            font-size: 18px;
+        }   
+        .ps{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            padding-top: 10px;
+            font-weight: bolder;
+        }
+        /* Pseudo selector */
+        #id:hover{
+            color: white;
+            background-color: rgb(1, 200, 250);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            transform: rotate(360deg)
+        }
+        #sel:hover{
+            color: white;
+            background-color: rgb(1, 200, 250);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 2px gray;
+            width: 220px;
+            height: 60px;
+            text-decoration: wavy underline;
+        }
+        /* .container-grid:hover{
+            margin-top: none;
+            width: 500px;
+            height: 200px;
+            padding: 25px;
+            margin: 10px;
+            margin-left: 250px;
+            transition: all 0.3s ease;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        } */
+    </style>
+</head>
+<body>
+    <h1 id="sel">Selector</h1>
+    <div class="container-grid">
+        <div id ="id">
+            <h3>Elements selector</h3>
+        </div>
+        <div id ="id">
+            <h3>ID Selector</h3>
+        </div>
+        <div id ="id">
+            <p class="cls">class selector</p>
+        </div>
+        <div id="id">
+            <p class="ps">pseudo selector</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+               initial-scale=1.0">
+    <title>Adding ARIA Roles</title>
+</head>
+
+<body>
+
+    <!-- <nav role="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <label for="username">Username:</label>
+    <input type="text" id="username" 
+           aria-labelledby="username">
+
+<button aria-disabled="true">Submit</button>
+<div role="button">Self-destruct</div> -->
+<div role="search">
+  <!-- Hidden decorative icon -->
+  <span class="icon" aria-hidden="true">🔍</span>
+
+  <!-- Input with aria-label -->
+  <input type="text" aria-label="Search through site content" />
+
+  <!-- Custom button with tabindex -->
+  <div role="button" tabindex="0" aria-label="Submit search">
+    Go
+  </div>
+</div>
+
+</body>
+
+</html>

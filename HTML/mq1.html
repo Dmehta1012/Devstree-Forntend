@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media quries</title>
+    <style>
+        div > h1{
+            font-size: 20px;
+        }
+        .container{
+            display: grid;
+            grid-template-areas:
+            'header header header header header header ' 
+                        'menu main main main right right'
+                        'footer footer footer footer footer footer';
+            gap: 5px;
+            background-color: rgb(255, 255, 255);
+            padding: 5px;
+        }
+        .item1{
+            grid-area: header;
+            background-color: darkslategray;
+            color: white;
+            text-align: center;
+        }
+        .item2{
+        grid-area: menu;
+        display: flex;
+        justify-content: center;
+        }
+        .item2 li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            padding: 8px;
+            margin: 10px;
+            text-align: center;
+            width: 15vw;
+        }
+        .item2 ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .item2 ul :hover{
+            background-color: rgb(40, 210, 210);
+        }
+        .item3{
+            grid-area: main;
+        }
+        .item3 p{
+            line-height: 50px;
+        }
+        .item3 span{
+            display: block;
+        }
+        .item4{
+            grid-area: right;
+            border: 2px solid rgb(9, 206, 245);
+            font-size: 18px;
+            margin: 8px;
+            padding: 10px;
+        }
+        .item5{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            grid-area: footer;
+            background-color: aqua;
+        }
+/* @media screen and (max-width:768px)  {
+    .item1{grid-area: 1/span 6;}
+    .item2{grid-area: 2/span 1;}
+    .item3{grid-area: 2 span 4;}
+    .item4{grid-area: 3/span 6;}
+    .item5{grid-area: 5/span 6;}
+        }
+@media only screen and (max-width: 600px) {
+    .item1 {grid-area: 1 / span 6;}
+    .item2{grid-area: 2/span 6;}
+    .item3{grid-area: 3/span 6;}
+    .item4{grid-area: 4/span 6;}
+    .item5{grid-area: 5/span 6;}
+}  */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <h1>Ahmedabad</h1>
+        </div>
+        <div class="item2">
+            <ul>
+                <li>Ranip</li>
+                <li>navrangpura</li>
+                <li>Gurukul</li>
+                <li>Gota</li>
+            </ul>
+        </div>
+        <div class="item3">
+            <h3> Ranip </h3>
+            <p><span>Ranip is a well-established and evolving residential area of Ahmedabad,</span> <span> offering a healthy mix of urban convenience and suburban charm.</span> <span>Its connectivity, infrastructure, and community-centric vibe make it especially attractive to families and investors.</span></p>
+        </div>
+        <div class="item4">
+            <h3> Facts of Ranip:</h3>
+            <ul>
+                <li>Ranip is a residential area in North Ahmedabad, well-connected by the Ring Road and Metro.</li><br>
+                <li>It is divided into Old Ranip and New Ranip, with New Ranip being a modern housing hub.</li><br>
+                <li>The area is popular for its affordable housing, schools, hospitals, and shopping centers.</li><br>
+            </ul>
+            </div>
+        <div class="item5">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, laboriosam!</p>
+        </div>
+    </div>
+</body>
+</html>

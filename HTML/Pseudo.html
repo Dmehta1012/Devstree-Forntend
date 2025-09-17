@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        .container{
+            position: relative;
+            border: 1px solid black;
+            width: 50%;
+            padding: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        .selection{
+            line-height: 15px;
+            padding: 5px;
+            border: 1px solid black;
+            width: 500px;
+            height: 120px;
+        }
+        .selection::selection{
+            color: rgb(0, 255, 81);
+            background-color: black;
+        }
+        .selection h4 {
+            text-align: center;
+        }
+        .hover{
+            line-height: 50px;
+            width: 300px;
+            height: 100pxpx;
+        }
+        .hover:hover{
+            background-color: lightblue;
+        }
+        .hover a:link{
+            color:brown;
+        }
+        .hover a:visited{
+            color: blue;
+        }
+        .hover a:active{
+            color: blueviolet;
+        }
+        .t input:focus{
+            background-color: yellow  ;
+        }
+        .required::after{
+            content: '*';
+            color: red;
+        }
+        .f-c{
+            
+            border: 1px solid black;
+            width: 250px;
+            padding: 10px;
+        }
+        /* ul li:first-child{
+            background-color: rgb(0, 136, 255);
+            color: rgb(255, 255, 255);
+        }
+        ul li:last-child{
+            background-color: rgb(43, 255, 0);
+            color: rgb(255, 255, 255);
+        } */
+        ul li:nth-child(2n+2){
+            background-color: blue;
+        }
+        h4::first-letter{
+            background-color: wheat;
+            font-size: x-large;
+            color: crimson;
+        }
+        p::first-letter{
+            
+            background-color: cadetblue;
+            font-size: 25px;
+            color: white;
+        }
+        .before h3::before{
+            content: 'hello ';
+        }
+        .after h3::after{
+            content: 'Devarsh ';
+        }
+        .box{
+            border: 1px solid black;
+            width: 200px;
+            height: 150px;
+        }
+        #box1{
+            background-color: red;
+            position: relative;
+            top: 45px;
+            left: 50px;
+            z-index: 3;
+        }
+        #box2{
+            background-color: blue;
+            position: relative;
+            top: 20px;
+            left: 80px;
+            z-index: 2;
+        }
+        #box3{
+            background-color: green;
+            position: relative;
+            top: -20px;
+            left: 110px;
+            z-index: 1;
+        }
+        #box4{
+            background-color: yellow;
+            position: relative;
+            top: -60px;
+            left: 140px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="selection">
+            <h4>Selection</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sunt ipsa quod quia, provident eligendi maxime optio assumenda, reiciendis cupiditate distinctio dicta.</p>
+        </div>
+        <div class="hover">
+            <a href="selector.html">
+                learn more.....
+            </a><br>
+            <div class="t">
+                <form action="">
+                <label class="required"for="name">Name:</label>
+                <input type="text" placeholder="enter your name">
+                </form>
+            </div>
+        </div>
+    </div>
+    <ul>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+        <li>item-6</li>
+        <li>item-7</li>
+        <li>item-8</li>
+        <li>item-9</li>
+        <li>item-10</li>
+    </ul>
+    <ul>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+        <li>item-6</li>
+        <li>item-7</li>
+        <li>item-8</li>
+        <li>item-9</li>
+        <li>item-10</li>
+    </ul>
+    <div class="after-before" >  
+        <div class="before">
+            <h3>world!</h3>
+        </div>
+        <div class="after">
+            <h3>hello world!</h3>
+        </div>
+    </div>
+
+    <div class="box" id="box1">
+
+    </div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body> 
+</html>         

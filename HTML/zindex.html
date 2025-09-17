@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zindex</title>
+<style>
+    .con{
+        width:auto;
+        height: auto;
+        position: relative;
+        height: 500px;
+        width: 500px;
+    }
+    .img{
+        position: absolute;
+        border: 3px solid black;
+        z-index: 1;
+    }
+    .personal.info{
+        position: absolute;
+        border: 1px solid black;
+        z-index: 3;
+        font-family: 'Times New Roman', Times, serif;
+        width: 250px;
+        height: 250px;
+        right: 0;
+        background-color: rgb(173, 216, 230,0.5);
+    }
+    .work{
+        position: absolute;
+        border: 1px solid black;
+        z-index: 3;
+        font-family: 'Times New Roman', Times, serif;
+        bottom: 0;
+        width: 250px;
+        height: 250px;
+        background-color: rgb(173, 216, 230,0.5);
+    }
+</style>
+</head>
+<body>
+    <h1>z-index</h1>
+    <p>An element with greater stack order is always above an element with a lower stack order</p>
+    <div class="con">
+        <div class="img">
+            <img src="photos/IMG-20250429-WA0057.jpg" alt="" height="500px" width="500px">
+        </div>
+        <div class="personal info ">
+            <h1>Devarsh Mehta</h1>
+            <h3>mehtadevarsh03@gmail.com</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </div>
+        <div class="work">
+            <h1>Devstree It Service PVT LTD </h1>
+            <h3>Intern</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, placeat!</p>
+        </div>
+    </div>
+</body>
+</html>

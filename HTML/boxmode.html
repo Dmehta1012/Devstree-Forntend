@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    .container-grid{
+        width: 650px;
+        border: 3px solid black;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-color: lightgray;
+    }
+    .margin{
+        width: 600px;
+        border: 3px solid black;
+        margin: 20px;
+        background-color: lightblue;
+    }
+    .border{
+        margin-left: 20px;
+        margin-right: 20px;
+        border: 2px solid black;
+        padding: 20px;
+        margin-bottom: 40px;
+        background-color: lightskyblue;
+    }
+    .padding{
+        border: 2px solid black;
+        padding: 20px;
+        margin:5px;
+        margin-bottom: 20px;   
+        background-color: lightcyan;
+    }
+    .content{
+        border: 2px solid black;
+        padding: 20px;
+        margin: 20px;
+        margin-bottom: 20px;
+        background-color: lightgreen;
+    }
+    </style>
+</head>
+<body>
+    <div class="container-grid">
+        <div class="margin">
+            <h1>Margin</h1>
+                <div class="border">
+                    <h1>border</h1>
+                        <div class="padding">
+                            <h1>Padding</h1>
+                                <div class="content">
+                                    <h1>Content</h1>
+                                </div>
+                        </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

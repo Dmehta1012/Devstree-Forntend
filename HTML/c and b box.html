@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>c and b box</title>
+<style>
+    .content-box{
+        width: 300px;
+        height: 100px;
+        padding: 15px;
+        box-sizing: content-box;
+        border: 1px solid black;
+    }
+    .border-box{
+        width: 300px;
+        height: 100px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        padding: 15px;
+    }
+</style>
+</head>
+<body>
+    <div class="content-box">
+        <h1> content Box</h1>
+    </div>
+    <div class="border-box">
+        <h1> Border Box</h1>
+    </div>
+</body>
+</html>

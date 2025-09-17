@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+    .inline{
+        border: 2px solid black;
+        /* width: 300px;
+        height: 150px; */
+        overflow: hiden;
+    }
+    .exp1{
+        display: block;
+    }
+    .exp2{
+        display: inline;
+        border: 1px solid red;
+        background-color: yellow;
+        font-weight: bold;
+    }
+    .exp3{
+        display: inline-block;
+        border: 1px solid red;
+        background-color: yellow;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <div class="inline">
+        <h1>block</h1>
+        <p>
+            Lorem ipsum dolor sit amet <span class="exp1">consectetur adipisicing elit.</span> Beatae quia assumenda, quo amet, doloremque itaque accusamus corrupti nesciunt quidem voluptas est, vel libero illum illo minima excepturi eveniet quos numquam?
+        </p>
+        <hr>
+        <h1>inline</h1>
+                <p>
+            Lorem ipsum dolor sit amet <span class="exp2">consectetur adipisicing elit.</span> Beatae quia assumenda, quo amet, doloremque itaque accusamus corrupti nesciunt quidem voluptas est, vel libero illum illo minima excepturi eveniet quos numquam?
+        </p>
+        <hr>
+        <h1>inline-block</h1>
+                <p>
+            Lorem ipsum dolor sit amet <span class="exp3">consectetur adipisicing elit.</span> Beatae quia assumenda, quo amet, doloremque itaque accusamus corrupti nesciunt quidem voluptas est, vel libero illum illo minima excepturi eveniet quos numquam?
+        </p>
+    </div>
+</body>
+</html>

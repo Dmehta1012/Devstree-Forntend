@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&C</title>
+</head>
+<style>
+    .cnt{
+        width: 350px;
+        height: auto;
+        border:1px solid black;
+        background-color: rgb(219, 221, 240);
+    }
+    .img-m{
+        width: 50%;
+        height:50%;
+        border-radius: 30%;
+        margin: 10px;
+        margin-left: 100px;
+        display: block;
+        background-color: aqua;
+    }
+    h3{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: bolder;
+        color: rgb(0, 0, 0);
+    }
+    p{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: bolder;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+    }
+    .info{
+        display: none;
+    }
+    .cnt:hover  .info{
+    display: contents;
+    transition: all 1.5s raase;
+    height: 500px;
+    }
+    .cnt:hover .cnt-inside{
+        transition: all 1s ease;
+        cursor: pointer;
+    }
+    .cnt:hover{
+        transform: rotate(360deg);
+        transition: all 1s ease-in-out;
+    }
+</style>
+<body>
+<div class="cnt">
+    <div class="cnt-inside">
+        <div >
+            <img src="photos/IMG-20250429-WA0057.jpg" alt="Devarsh Mehta"width=100% class="img-m">
+        </div>
+            <h3>Devarsh Mehta</h3>
+        <div class="info">
+        <p>"Hi, my name is Devarsh Mehta. I’m from Gujarat. I have an interest to become a Frontend Developer. I’m a quick      learner  and always eager to improve myself."
+        </p> 
+        </div>
+    </div>
+</div>
+</body>
+</html>

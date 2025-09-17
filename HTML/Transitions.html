@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .container{
+            position: relative;
+            border:  3px solid black;
+            display: flex;
+            gap:20px;
+            height:600px;
+            width:100%
+        }
+        .transitions{
+            border: 2px solid black;
+            width: 50px;
+            height: 50px;
+            background-color: blueviolet;
+            transition:   width 4s;
+        }
+        .transitions:hover{
+
+            width: 100px;
+        }
+        .delay{
+            border: 2px solid black;
+            width: 50px;
+            height: 50px;
+            background-color: blueviolet;
+            transition:   width 4s;
+            transition-delay:1s ;
+        }
+        .delay:hover{
+            
+            width: 100px;
+        }
+        .t-t-f{
+            margin: 25px;
+            position: absolute;
+            border: 2px solid black;
+            width: 500px;
+            height: 550px;
+            transition: width 2s,height 4s;
+            right :50px;
+        }
+        .l{
+            margin: 50px;
+            border: 1px solid black;
+            width:50px;
+            height: 50px;
+            
+            transition: width 2s;
+        }
+        .l:hover{
+            border: 1px solid black;
+            background-color: aqua;
+            width: 100px;
+            transition-timing-function: linear;
+        }
+        .e{
+            margin: 50px;
+            border: 1px solid black;
+            width:50px;
+            height: 50px;
+            transition: width 2s; 
+        }
+        .e:hover{
+            border: 1px solid black;
+            background-color: aqua;
+            width: 100px;
+            transition-timing-function: ease;
+        }
+        .e-i{
+            margin: 50px;
+            border: 1px solid black;
+            width:50px;
+            height: 50px;
+            transition: width 2s; 
+        }
+        .e-i:hover{
+            border: 1px solid black;
+            background-color: aqua;
+            width: 100px;
+            transition-timing-function: ease-in;
+        }
+        .e-o{
+            margin: 50px;
+            border: 1px solid black;
+            width:50px;
+            height: 50px;
+            transition: width 2s; 
+        }
+        .e-o:hover{
+            border: 1px solid black;
+            background-color: aqua;
+            width: 100px;
+            transition-timing-function: ease-out;
+        }
+        .e-i-o{
+            margin: 50px;
+            border: 1px solid black;
+            width:50px;
+            height: 50px;
+            transition: width 2s; 
+        }
+        .e-i-o:hover{
+            border: 1px solid black;
+            background-color: aqua;
+            width: 100px;
+            transition-timing-function: ease-in-out;
+        }
+        .transform{
+            border: 1px solid black;
+            width:50px;
+            height: 50px;
+            transition : width 2s,height 2s, transform 2s;
+        }
+        .transform:hover{
+            background-color: lemonchiffon;
+            width: 250px;
+            height:250px;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <h3>normal transitions and delay transition</h3>
+    <div class="transitions"></div><br>
+    <div class="delay"></div>
+    <div class="container">
+        <div class="t-t-f">  
+                <h3>transitions time function </h3>
+                <div class="l"><h6>linear</h6></div>
+                <div class="e"><h6>ease</h6></div>
+                <div class="e-i"><h6>ease-in</h6></div>
+                <div class="l"><h6>ease-out</h6></div>
+                <div class="l"><h6>ease-in-out</h6></div>
+                </div>
+                <h4>hover to transfrom into big box</h4>
+                <div class="transform"></div>
+    </div>
+</body>
+</html>

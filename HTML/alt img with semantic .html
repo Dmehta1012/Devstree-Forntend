@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .li{
+            list-style: none;
+            display: flex;
+            gap:40px
+        }
+        .header{
+            display: flex;
+            gap: 20px;
+            background-color: moccasin;
+            padding: 10px;
+            align-items: center;
+            font-size: large;
+            font-weight: bold;
+
+        }
+        .buttons{
+            margin-left: auto;
+            display: flex;
+            gap: 10px;
+            font-size: large;
+            margin-right: 20px;
+            background-color: orange;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+        }
+        .image{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            
+        }
+        .footer{
+            background-color: moccasin;
+            height: 100px;
+            text-align: center;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <ul class="li">
+            <li>home</li>
+            <li>about us</li>
+            <li>contact us </li>
+            <li>feebback</li>
+            <li>booking</li>
+        </ul>
+        <div class="buttons">
+            <button>log in</button>
+            <button>log out</button>
+        </div>
+    </header>
+    <main>
+        <h1>Image with alt attributes</h1>
+        <div class="image">
+            <img src="photos/3.jpe" alt="this isimage of land crusier"><br>
+            <img src="photos/3.jpeg" alt="this is an car image"><br>
+            <img src="photos/1.jpeg" alt="this is an car image"><br>
+            <img src="photos/1.jpeg" alt="this is an car image"><br>
+            <img src="photos/2.jpe" alt="this is image of defender "><br>
+            <img src="photos/3.jpeg" alt="this is an car image"><br>
+            <img src="photos/4.jpe" alt="this is image of g Wagaon"><br>
+            <img src="photos/3.jpeg" alt="this is an car image"><br>
+        </div>
+    </main>
+    <footer class="footer">
+        <h1>This is footer </h1>
+    </footer>
+</body>
+</html>

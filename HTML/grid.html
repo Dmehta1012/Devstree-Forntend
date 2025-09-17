@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    .container-grid{
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: [f-c]120px [s-c]50px [t-c]80px [fo-c] ;
+        grid-template-rows: 60px 60px 60px  80px;
+        justify-content : center;
+        
+    }
+    .item{
+        border: 1px solid red;
+        height: 55px;
+        width: 55px;
+    }
+    .item-1{
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: 20% 30% 50%;
+        width : 70%;
+        grid-row: 1/2;
+        background-color: lightpink;
+        z-index: 3;
+        text-align: center;
+        font-size: 20px;
+    }
+    .item-1-grid{
+        border: 1px solid none;
+        display: none;
+    }
+    .item-1:hover .item-1-grid{
+        display: block;
+        z-index: 4;
+    }
+    .item-1-grid-A:hover{
+        
+        background-color: yellow;
+        cursor: pointer;
+    }
+    .item-1-grid-B:hover{
+        background-color: lightcyan;
+    }
+    .item-1-grid-C:hover{
+        background-color: lightgreen;
+    }
+    .item-2{
+        grid-column: s-c/t-c;
+        grid-row: 2/3;
+        width: 50px;
+        z-index: 2;
+        background-color: lightseagreen;
+        font-size: 20px;
+    }
+    .item-3{
+        grid-column: t-c/fo-c;
+        grid-row: 3/4;
+        width: 80px;
+        z-index: 2;
+        background-color: lightcoral;
+        font-size: 20px;
+    }
+    .item-4{
+        grid-column: f-c/s-c;
+        grid-row: 3/4;
+        height: 58px;
+        background-color: lightgreen;
+        z-index: 2;
+        font-size: 20px;
+    }
+    .item-5{
+        grid-column: s-c/t-c;
+        grid-row: 4/5;
+        height: 80px;
+        width: 50px;
+        background-color: lightblue;
+        z-index: 2;
+        font-size: 20px;
+    }
+    .item-area{
+        text-align: right;
+        grid-column: f-c/fo-c;
+        grid-row: 1/5;
+        height: 100%;
+        width: 100%;
+        background-color: lightgrey;
+        z-index: 2;
+        font-size: 20px;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="container"></div>
+        </nav>
+    </header>
+    <div class="container-grid">
+        <div class="item item-area "></div>
+        <div class="item item-1 ">1
+            <div class="item-1-grid item-1-grid-A">A</div>
+            <div class="item-1-grid item-1-grid-B " >B</div>
+            <div class="item-1-grid item-1-grid-C">C</div>
+        </div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+    </div>
+</body>
+</html>
